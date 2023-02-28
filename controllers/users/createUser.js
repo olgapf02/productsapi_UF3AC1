@@ -19,6 +19,7 @@ const createUser = ((req, res) => {
       res.json(`User registered successfully. Use apikey= ${user.apiKey}`);
     })
     .catch((error)=>{
+      console.log(error);
       res.json("Error when registering user");
     })
     .finally(()=>{
